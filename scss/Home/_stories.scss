@@ -1,0 +1,69 @@
+.stories {
+  padding: 140px 0 151px;
+
+  background: #004047;
+
+  text-align: center;
+
+  position: relative;
+
+  &::before {
+    content: url(../../images/Home/deliver-right-bg.png);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    content: url(../../images/Home/Group8.png);
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__title {
+    margin-bottom: 92px;
+
+    color: #fff;
+    font-family: Livvic Bold;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  &__span {
+    color: #79c8c7;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.card {
+  &__title {
+    color: #79c8c7;
+    text-align: center;
+    font-family: Livvic Bold;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  &__description {
+    width: 300px;
+    margin-bottom: 24px;
+
+    color: #fff;
+    text-align: center;
+    font-family: Livvic Seim-Bold;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  &__text {
+    margin-bottom: 24px;
+
+    color: #fff;
+    text-align: center;
+    font-family: Livvic Medium;
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
