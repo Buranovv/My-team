@@ -15,7 +15,7 @@
     content: url(../../images/Home/disk-bottom.svg);
 
     position: absolute;
-    bottom: -4px;
+    bottom: 0;
     right: 180px;
   }
 
@@ -159,7 +159,7 @@
 @media only screen and (max-width: 470px) {
   .hero {
     &::after {
-      transform: translateX(35%);
+      transform: translateX(45%);
     }
   }
 }
