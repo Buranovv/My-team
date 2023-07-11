@@ -1,0 +1,68 @@
+.header {
+  padding: 77px 0;
+  background: #014e56;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+  &__list {
+    display: flex;
+    gap: 40px;
+  }
+  &__item {
+    color: #fff;
+    font-family: Livvic Semi-Bold;
+    font-size: 18px;
+    line-height: 28px;
+
+    text-transform: lowercase;
+  }
+  &__item:hover {
+    color: #f67e7e;
+  }
+  &__btn-active:hover {
+    background: #fff;
+    color: #002529;
+  }
+}
+
+.dropdown {
+  display: none;
+
+  &__list {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header {
+    padding: 72px 0;
+
+    &__img {
+      width: 128px;
+      height: 32px;
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .header {
+    padding: 48px 0;
+
+    &__list {
+      display: none;
+    }
+    &__btn-active {
+      display: none;
+    }
+  }
+  .dropdown {
+    display: block;
+  }
+}

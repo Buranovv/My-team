@@ -1,0 +1,165 @@
+.hero {
+  padding: 50px 0 250px;
+
+  background: #014e56;
+
+  position: relative;
+
+  &::before {
+    content: url(../../images/Home/disk-left.png);
+
+    position: absolute;
+    top: 50px;
+  }
+  &::after {
+    content: url(../../images/Home/disk-bottom.svg);
+
+    position: absolute;
+    bottom: -4px;
+    right: 180px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    position: relative;
+  }
+  &__title {
+    max-width: 531px;
+
+    color: #fff;
+    font-family: Livvic Bold;
+    font-size: 100px;
+    line-height: 100px;
+  }
+  &__span {
+    color: #f67e7e;
+  }
+  &__text {
+    max-width: 445px;
+
+    color: #fff;
+    font-family: Livvic Semi-Bold;
+    font-size: 18px;
+    line-height: 28px;
+
+    &::before {
+      content: "";
+
+      width: 50px;
+      height: 4px;
+      background: #79c8c7;
+
+      position: absolute;
+
+      top: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  .hero {
+    &::before {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .hero {
+    &::after {
+      transform: translateX(-30%);
+    }
+    &::before {
+      display: none;
+    }
+    &__title {
+      width: 500px;
+
+      font-size: 85px;
+      line-height: 85px;
+    }
+    &__text {
+      font-size: 15px;
+      line-height: 28px;
+    }
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .hero {
+    text-align: center;
+    padding: 48px 0 250px;
+
+    &::after {
+      transform: translateX(-30%);
+    }
+    &::before {
+      display: none;
+    }
+    &__box {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+    &__text {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero {
+    padding: 48px 0 250px;
+    &::after {
+      transform: translateX(-10%);
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .hero {
+    &::after {
+      transform: translateX(20%);
+    }
+    &__box {
+      gap: 24px;
+    }
+    &__title {
+      font-size: 64px;
+      line-height: 56px;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .hero {
+    padding: 32px 0 197px;
+
+    &__box {
+      gap: 18px;
+    }
+    &__title {
+      width: 327px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+    &__text {
+      width: 327px;
+    }
+  }
+}
+@media only screen and (max-width: 470px) {
+  .hero {
+    &::after {
+      transform: translateX(35%);
+    }
+  }
+}
